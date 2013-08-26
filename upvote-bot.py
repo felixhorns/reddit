@@ -5,6 +5,11 @@ from praw.objects import Redditor, Submission
 __author__ = 'bzb'
 __version__ = '0.1'
 
+"""Upvote/downvote all comments and submissions by redditor target.
+Change commented lines to specify user and upvote/downvote.
+
+"""
+
 class RedditBot(object):
 
 	def __init__(self, username, password, target):
@@ -33,7 +38,7 @@ class RedditBot(object):
 			time.sleep(2) # Following reddit's rules
 
 def main(target):
-	bot = RedditBot('testthroaway', 'testthroaway', target)
+	bot = RedditBot('username', 'password', target) # Specify username and password
 	try:
 		bot.run()
 	except:
