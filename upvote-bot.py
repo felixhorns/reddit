@@ -5,8 +5,10 @@ from praw.objects import Redditor, Submission
 __author__ = 'bzb'
 __version__ = '0.1'
 
-"""Upvote/downvote all comments and submissions by redditor target.
+"""Upvotes (or downvotes) all comments and submissions by redditor target.
 Change commented lines to specify user and upvote/downvote.
+
+python upvote-bot.py target
 
 """
 
